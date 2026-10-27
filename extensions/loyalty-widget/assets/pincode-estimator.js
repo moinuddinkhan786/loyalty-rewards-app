@@ -124,7 +124,7 @@
             // A city's custom note replaces the days line entirely — never
             // show both for the same result.
             var daysLine = data.customMessage
-              ? '<span class="pe-days">' + esc(String(data.customMessage)) + '</span><br>'
+              ? '<span class="pe-days">🚚 Estimated delivery: ' + esc(String(data.customMessage)) + '</span><br>'
               : (days ? '<span class="pe-days">🚚 Estimated delivery: ' + days + '</span><br>' : "");
             var stateLabel = data.state ? " (" + esc(String(data.state)) + ")" : "";
             result.innerHTML =
